@@ -15,7 +15,7 @@ func main() {
 
 func EnqueteMigration(db *adapter.PostgresAdapter) {
 	db.Db.Migrator().CreateTable(
-		&model.Option{},
 		&model.Poll{},
+		&model.Option{},
 	)
 }
